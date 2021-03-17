@@ -47,7 +47,7 @@ a {
 #topbar #navbar {
     padding: 6px;
     margin-right: 280px; /* Make it closer to the Logo */
-    margin-top: 45px;
+    margin-top: 48px;
     
 }
 
@@ -59,6 +59,7 @@ a {
     padding: 0 8px;
     color: hsl(0, 0%, 88%);
     font-size: 14px;
+    font-weight: 700;
 }
 
 #topbar #navbar i {
@@ -69,7 +70,7 @@ a {
 
 #topbar #account {
     padding: 6px;
-    margin: 43px 0;
+    margin: 49px 0;
 }
 
 #topbar #account ul{
@@ -77,7 +78,30 @@ a {
 }
 
 #topbar #account ul li a {
-    padding: 0 35px;
+    padding: 10px 35px;
     color: hsl(0, 0%, 83%);
     font-size: 14px;
+    font-weight: 700;
+    transition: all .1s ease-in-out;
+    
 }
+
+/* HOVER STATE NAVBAR */
+#topbar #navbar a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* HOVER STATE ACCOUNT */
+#topbar #account ul li a:hover {
+    cursor: pointer;
+    background-color: hsl(355, 63%, 57%);
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+/* HERO SECTION */
+/*
+#hero {
+    margin: 0 auto;
+}*/
