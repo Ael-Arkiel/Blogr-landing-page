@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Overpass', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+/* Container */
+
+.container {
+    width: 80%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+/* WELCOME SECTION */
+
+#welcome-section {
+    height: 60vh;
+    background-color: salmon;
+}
+
+#welcome-section #topbar {
+    display: flex;
+    justify-content: space-around;
+}
+
+#topbar #logo {
+    margin: 40px 0;
+    font-weight: 1000;
+    font-size: 22px;
+    color: hsl(0, 0%, 100%);
+}
+
+#topbar #navbar {
+    padding: 6px;
+    margin-right: 280px; /* Make it closer to the Logo */
+    margin-top: 45px;
+    
+}
+
+#topbar #navbar ul{
+    display: flex;
+}
+
+#topbar #navbar ul li a{
+    padding: 0 8px;
+    color: hsl(0, 0%, 88%);
+    font-size: 14px;
+}
+
+#topbar #navbar i {
+    color: hsl(0, 0%, 88%);
+    font-size: 10px;
+    margin: 0 5px;
+}
+
+#topbar #account {
+    padding: 6px;
+    margin: 43px 0;
+}
+
+#topbar #account ul{
+    display: flex;
+}
+
+#topbar #account ul li a {
+    padding: 0 35px;
+    color: hsl(0, 0%, 83%);
+    font-size: 14px;
+}
