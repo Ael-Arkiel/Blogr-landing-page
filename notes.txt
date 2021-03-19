@@ -5,3 +5,4 @@
  - how to make the anchor underline thicker on thr navbar
  - navbar hover shows a sub menu
  - welcome-section background
+ - Learn how to do the radius shape in one corner
