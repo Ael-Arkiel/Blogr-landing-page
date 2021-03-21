@@ -37,6 +37,10 @@ a {
     justify-content: space-around;
 }
 
+ #topbar {
+    position: relative;
+}
+
 #topbar #logo {
     margin: 40px 0;
     font-weight: 1000;
@@ -51,11 +55,12 @@ a {
     
 }
 
-#topbar #navbar ul{
+#topbar #navbar .unordered-topbar{
     display: flex;
+    /* position: relative; */
 }
 
-#topbar #navbar ul li a{
+#topbar #navbar .unordered-topbar li a{
     padding: 0 8px;
     color: hsl(0, 0%, 88%);
     font-size: 14px;
@@ -68,6 +73,42 @@ a {
     margin: 0 5px;
 }
 
+/* PRODUCT ITEM DROPDOWN MENU */
+
+#topbar #navbar .unordered-topbar .product-dropdown {
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    margin-top: 30px;
+    opacity: 0;
+    pointer-events: none;
+    /*display: none;*/
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+#topbar #navbar .unordered-topbar .product-dropdown li {
+    margin: 5px 8px;
+}
+
+#topbar #navbar .unordered-topbar .product-dropdown a {
+    color: rgb(61, 61, 61);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#topbar #navbar .unordered-topbar .product-dropdown a:hover {
+    color: #000;
+}
+
+/* Submenu (product-dropdown) shows*/
+#topbar #navbar .unordered-topbar .product:hover + .product-dropdown{
+    opacity: 1;
+    pointer-events: all;
+    display: block;
+    transform: translateY(0px);
+}
+/* LOGIN & SIGNUP BUTTONS */
 #topbar #account {
     padding: 6px;
     margin: 49px 0;
